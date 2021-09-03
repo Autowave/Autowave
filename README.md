@@ -128,7 +128,7 @@ model.fit(data)
 audio_file = 'Test_Data/class_2/test1.wav'
 model.predict(audio_file)
 ```
-
+<img src="/img/img8.jpeg" />
 
 
 
