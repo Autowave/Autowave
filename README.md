@@ -52,7 +52,7 @@ For playing the audio you can use **AudioPlayer** which takes the path of the fi
 ```python
 AudioPlayer('Test_Data/car_horn/107090-1-1-0.wav')
 ```
-<img src="/img/img1.png" />
+
 
 ### 3. For converting the audio format
 
@@ -61,6 +61,7 @@ For converting the format of single file using **audioConversion** which take in
 ```python
 audioConversion('test.mp3','mp3','wav')
 ```
+<img src="/img/img1.png" />
 
 ### 4. For Augumenting the audio file
 
@@ -69,7 +70,7 @@ For augumenting the single file **augumentOneFile** which take audio file path, 
 ```python
 augumentOneFile('test.wav','augumented_data',aug_times=10,noise=True,shift=True,stretch=True,pitch=True)
 ```
-
+<img src="/img/img2.png" />
 For folder **augementFolder** which takes a dataframe generated using the **gen_data_from_folder**, output path,  by default it augument one file 10 time by shifing, adding noise, changing pitch and streching.  We can Off any one this functionality by making it False.
 
 
@@ -95,6 +96,7 @@ For folder **plotMultipleFile** which takes a dataframe generated using the **ge
 plotOneFile.time_freq_domain('Test.wav')
 plotMultipleFile.time_freq_domain(data)
 ```
+<img src="/img/img3.png" />
 
 ### 7. Loading the data
 
@@ -104,6 +106,7 @@ For loading the data from the folder **gen_data_from_folder** which takes the in
 dataset_dir = 'Test_Data/'
 data = gen_data_from_folder(dataset_dir,get_dataframe=True,label_folder=True)
 ```
+<img src="/img/img4.png" />
 
 ### 8. For Training the model
 
@@ -113,14 +116,18 @@ For training the model we use **Auto_Audio_Classification** which takes the inpu
 ```python
 model = Auto_Audio_Classification(test_size=0.2,label_encoding=True,result_dataframe=False,aug_data=True)
 model.fit(data)
+```
+
+<img src="/img/img5.png" />
+<img src="/img/img6.png" />
+<img src="/img/img7.png" />
+
+
+
+```python
 audio_file = 'Test_Data/class_2/test1.wav'
 model.predict(audio_file)
 ```
-
-
-
-
-
 
 
 
