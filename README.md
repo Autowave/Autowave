@@ -52,7 +52,7 @@ For playing the audio you can use **AudioPlayer** which takes the path of the fi
 ```python
 AudioPlayer('Test_Data/car_horn/107090-1-1-0.wav')
 ```
-
+<img src="/img/img1.png" />
 
 ### 3. For converting the audio format
 
