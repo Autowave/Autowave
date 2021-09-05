@@ -17,6 +17,12 @@
 - Plotting of single or multiples files can be done by just running one function
 - Multiple models can be trained simultaneously
 
+## Requirements
+
+```shell
+pip install simpleaudio
+```
+
 ## Installation
 
 This library is compatible with both *windows* and *Linux system* you can just use **PIP command** to install this library on your system:
